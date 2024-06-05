@@ -2,10 +2,11 @@ import { useState } from "react";
 import List from "todo_components/List";
 import Input from "todo_components/Input";
 import { v4 } from "uuid";
+import useLocalStorage from "./hooks/useLocalStorage";
 import "./App.css";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useLocalStorage("todos", []);
 
   const [todoName, setTodoName] = useState("");
 
