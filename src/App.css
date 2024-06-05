@@ -4,3 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+
+.remote-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted teal;
+}
+
+.remote-container-label {
+  color: teal;
+  font-size: large;
+  margin-bottom: 1rem;
+}
